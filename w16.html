@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form" name="myForm">
+      <h1>Регистрация</h1>
+      <label for="userName">Логин</label>
+      <input
+        type="text"
+        name="userName"
+        id="userName"
+        class="input"
+        placeholder="Введите имя"
+        required
+        minlength="2"
+        maxlength="20"
+      />
+      <span id="nameError" class="error"></span>
+      <br />
+      <label for="userEmail">Почта</label>
+      <input
+        type="email"
+        name="userEmail"
+        id="userEmail"
+        class="input"
+        placeholder="Введите почту"
+        required
+      />
+      <span id="emailError" class="error"></span>
+      <br />
+      <label for="age">Возраст</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        class="input"
+        placeholder="Введите возраст"
+        required
+      />
+      <span id="ageError" class="error"></span>
+      <br />
+      <legend>Выберите пол</legend>
+      <label for="female">Женщина</label>
+      <input type="radio" name="female" id="female" />
+      <label for="male">Мужчина</label>
+      <input type="radio" name="male" id="male" />
+      <span id="genderError" class="error"></span>
+      <br />
+      <label for="prof">Выберите профессию</label>
+      <select name="prof" id="prof" required>
+        <option value="">Выберите из списка</option>
+        <option value="Врач">Врач</option>
+        <option value="Программист">Программист</option>
+        <option value="Учитель">Учитель</option>
+        <option value="Дизайнер">Дизайнер</option>
+        <option value="Инженер">Инженер</option>
+        <option value="Продавец">Продавец</option>
+        <option value="Другое">Другое</option>
+      </select>
+      <span id="profError" class="error"></span>
+      <br />
+      <label for="password">Придумайте пароль</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        class="input"
+        placeholder="Пароль"
+        required
+        minlength="8"
+      />
+      <span id="passwordError" class="error"></span>
+      <br />
+      <input type="checkbox" name="agree" id="agree" />
+      <label for="agree">Я согласен с обработкой данных</label>
+      <span id="agreeError" class="error"></span>
+      <br />
+      <button type="submit" id="submitBtn">Отправить</button>
+    </form>
+    <script src="w16.js"></script>
+  </body>
+</html>
