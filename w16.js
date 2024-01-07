@@ -61,7 +61,7 @@ form.addEventListener('submit', function(evt){
 
 input.forEach(function(input){
     input.addEventListener('focus', function (){
-        input.style.border = '1px solid blue';
+        input.style.border = '1px solid #6A5ACD';
     });
     input.addEventListener('blur',function(){
         input.style.border = '1px solid grey';
